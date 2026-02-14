@@ -8,8 +8,8 @@ public class vectores {
         vector[2] = 6;
         vector[3] = 8;
 
-        for (int i = 0; i <vector.length; i++){
-            System.out.println(vector[i]);
+        for (int j : vector) {
+            System.out.println(j);
         }
     }
 }
