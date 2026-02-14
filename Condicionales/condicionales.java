@@ -6,6 +6,8 @@ public class condicionales {
         int num2 = 3;
         if(num1<num2){
             System.out.println(num1 + " Is bigger than " + num2);
+        }else{
+            System.out.println(num1 + " Is smaller than " + num2);
         }
     }
 }
