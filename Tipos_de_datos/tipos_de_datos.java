@@ -8,7 +8,8 @@ public class tipos_de_datos {
         byte diasMes = 31;
             // Talla: 8-bit
             // Intervalo: de -128 a 127
-            // Utilización: Almacenamiento eficiente en memoria en grandes matrices.\
+            // Utilización: Almacenamiento eficiente en memoria en grandes matrices
+            // byte es poco usando en la programacion funcional
 
         short diasLustro = (12 * 31) *5;
             // Talla: 16-bit
