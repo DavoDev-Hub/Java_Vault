@@ -1,5 +1,6 @@
 package Condicionales;
 
+// know if a number is smaller than
 public class condicionales {
     public static void main(String[] args) {
         int num1 = 2;
