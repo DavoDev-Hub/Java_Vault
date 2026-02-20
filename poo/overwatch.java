@@ -54,4 +54,16 @@ public class overwatch {
             System.out.println(getNombre() + " activa escudo con " + armadura + " puntos de armadura.");
         }
     }
+
+    public static class DPS extends Heroe {
+
+        public DPS(String nombre, int vida, int daño) {
+            super(nombre, vida, daño);
+        }
+
+        @Override
+        public void habilidadEspecial() {
+            System.out.println(getNombre() + " lanza un ataque devastador!");
+        }
+    }
 }
