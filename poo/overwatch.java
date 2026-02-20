@@ -66,4 +66,20 @@ public class overwatch {
             System.out.println(getNombre() + " lanza un ataque devastador!");
         }
     }
+
+    public static class Soporte extends Heroe {
+
+        private int curacion;
+
+        public Soporte(String nombre, int vida, int daño, int curacion) {
+            super(nombre, vida, daño);
+            this.curacion = curacion;
+        }
+
+        @Override
+        public void habilidadEspecial() {
+            System.out.println(getNombre() + " cura a su equipo con " + curacion + " puntos de vida.");
+        }
+    }
+
 }
