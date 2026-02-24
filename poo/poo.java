@@ -1,28 +1,43 @@
 package poo;
 
 class Estudiante {
+    private static final double NOTA_MINIMA = 0.0;
+    private static final double NOTA_MAXIMA = 10.0;
+    private static final double NOTA_APROBACION = 6.0;
 
-    private String nombre;
-    private int edad;
-    private double calificacion;
+    private final String nombre;
+    private final int edad;
+    private final double calificacion;
 
-    // Constructor
     public Estudiante(String nombre, int edad, double calificacion) {
-        this.nombre = nombre;
+        if (nombre == null || nombre.isBlank()) {
+            throw new IllegalArgumentException("El nombre no puede estar vacio.");
+        }
+        if (edad <= 0) {
+            throw new IllegalArgumentException("La edad debe ser mayor que 0.");
+        }
+        if (calificacion < NOTA_MINIMA || calificacion > NOTA_MAXIMA) {
+            throw new IllegalArgumentException("La calificacion debe estar entre 0 y 10.");
+        }
+
+        this.nombre = nombre.trim();
         this.edad = edad;
         this.calificacion = calificacion;
     }
 
-    // Método para saber si aprobó
     public boolean aprobo() {
-        return calificacion >= 6;
+        return calificacion >= NOTA_APROBACION;
     }
 
-    // Método para mostrar información
+    public String estadoAcademico() {
+        return aprobo() ? "Aprobado" : "Reprobado";
+    }
+
     public void mostrarInfo() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Edad: " + edad);
-        System.out.println("Calificación: " + calificacion);
+        System.out.printf("Nombre: %s%n", nombre);
+        System.out.printf("Edad: %d%n", edad);
+        System.out.printf("Calificacion: %.1f%n", calificacion);
+        System.out.printf("Estado: %s%n", estadoAcademico());
     }
 }
 
@@ -33,10 +48,8 @@ public class poo {
         Estudiante estudiante2 = new Estudiante("Carlos", 22, 5.0);
 
         estudiante1.mostrarInfo();
-        System.out.println("¿Aprobó? " + estudiante1.aprobo());
         System.out.println();
 
         estudiante2.mostrarInfo();
-        System.out.println("¿Aprobó? " + estudiante2.aprobo());
     }
 }
