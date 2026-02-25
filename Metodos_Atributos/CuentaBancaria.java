@@ -27,6 +27,7 @@ public class CuentaBancaria {
     // ------ Metodos de comportamiento ------
     public void depositar(double cantidad){
         if(cantidad > 0){
+            System.out.println("Depositando...");
             this.saldo += cantidad;
         }else{
             System.out.println("Error");
@@ -35,21 +36,21 @@ public class CuentaBancaria {
 
     public void retirar(double cantidad){
         if(cantidad > 0 && cantidad <= this.saldo){
-            this.saldo =- cantidad;
-            System.out.println("Saldo: " + saldo);
+            this.saldo -= cantidad;
+            System.out.println("Retirando " + cantidad + " ...");
         }else{
             System.out.println("Fondos insuficientes");
         }
     }
 
     public void mostrarInformacion(){
-        System.out.println("--- Informacion de la cuenta ---");
         System.out.println("--- Cuenta " + numeroCuenta + " ---");
         System.out.println("Titular: " + titular);
         System.out.println("Saldo: " + saldo);
     }
     public void transferir(CuentaBancaria destino, double cantidad){
-        this.saldo =- cantidad;
+        this.saldo -= cantidad;
+        System.out.println("Transfiriendo "+ cantidad + "...");
         destino.depositar(cantidad);
     }
 }
