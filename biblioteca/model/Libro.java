@@ -30,7 +30,7 @@ public class Libro {
         }
     }
 
-    // default: solo mismo paquete
+    // default: solo mismo paquete puede acceder a este
     void mostrarResumen() {
         System.out.println("Resumen: " + titulo + " por " + autor);
     }
