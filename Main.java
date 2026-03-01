@@ -3,11 +3,6 @@ import Metodos_Atributos.CuentaBancaria;
 public class Main {
     public static void main(String[] args) {
 
-
-
-
-
-        /*
         CuentaBancaria Cuenta0001 = new CuentaBancaria("Cuenta0001",
                 "Juan Pablo Jiménez", 500.0);
         CuentaBancaria Cuenta0002 = new CuentaBancaria("Cuenta0002",
@@ -39,6 +34,5 @@ public class Main {
         Cuenta0002.transferir(Cuenta0001, 200);
         Cuenta0002.mostrarInformacion();
         Cuenta0001.mostrarInformacion();
-        */
     }
 }
