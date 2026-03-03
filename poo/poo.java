@@ -50,6 +50,8 @@ public class poo {
         estudiante1.mostrarInfo();
         System.out.println();
 
+
+
         estudiante2.mostrarInfo();
     }
 }
