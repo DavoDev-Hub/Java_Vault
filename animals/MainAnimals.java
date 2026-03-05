@@ -13,7 +13,6 @@ class Animal{
     }
 }
 
-
 public class MainAnimals {
     public static void main(String[] args) {
         Animal dog1 = new Animal();
