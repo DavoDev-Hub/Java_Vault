@@ -29,5 +29,6 @@ public class Product {
             throw new IllegalArgumentException("Price cannot be negative");
         }
         this.price = price;
+
     }
 }

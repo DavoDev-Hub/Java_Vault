@@ -21,5 +21,4 @@ public class Customer {
     public void addOrder(Order order){ orders.add(order); }
     public List<Order> getOrders(){ return orders; }
 
-
 }
