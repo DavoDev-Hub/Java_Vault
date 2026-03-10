@@ -1,4 +1,4 @@
-package foodapp.app;
+package foodapp.model;
 
 public enum OrderStatus {
     CREATED,

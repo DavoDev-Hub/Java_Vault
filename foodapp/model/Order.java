@@ -1,4 +1,4 @@
-package foodapp.app;
+package foodapp.model;
 
 import java.util.ArrayList;
 import java.util.List;
