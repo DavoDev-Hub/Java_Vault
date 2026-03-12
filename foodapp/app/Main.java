@@ -16,11 +16,8 @@ public class Main {
 
         Product burger = new Product(12345, "Burger", 10);
         Product pizza = new Product(54321, "Pizza", 12);
-        Product soda = new Product(36789, "Soda", 3);
-
         service.addProduct(burger);
         service.addProduct(pizza);
-        service.addProduct(soda);
 
         Customer carlos = new Customer("Carlos");
 
@@ -31,7 +28,6 @@ public class Main {
         Order order = service.createOrder(carlos);
 
         service.addProductToOrder(order, burger);
-        service.addProductToOrder(order, soda);
 
         service.completeOrder(order);
 
