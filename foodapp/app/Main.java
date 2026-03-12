@@ -14,9 +14,9 @@ public class Main {
 
         OrderService service = new OrderService();
 
-        Product burger = new Product(1, "Burger", 10);
-        Product pizza = new Product(2, "Pizza", 12);
-        Product soda = new Product(3, "Soda", 3);
+        Product burger = new Product(12345, "Burger", 10);
+        Product pizza = new Product(54321, "Pizza", 12);
+        Product soda = new Product(36789, "Soda", 3);
 
         service.addProduct(burger);
         service.addProduct(pizza);
