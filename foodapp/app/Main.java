@@ -19,7 +19,7 @@ public class Main {
         service.addProduct(burger);
         service.addProduct(pizza);
 
-        Customer carlos = new Customer("Carlos");
+        Customer carlos = new Customer("Juan");
 
         service.registerCustomer(carlos);
 
