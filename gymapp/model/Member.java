@@ -7,14 +7,21 @@ public class Member {
     private static int idCounter = 0;
     private final int id;
     private String name;
-    private List<Subscription> suscriptions;
+    private List<Subscription> subscriptions;
 
     public Member(String name){
         this.id = ++idCounter;
         this.name = name;
-        this.suscriptions = new ArrayList<>();
+        this.subscriptions = new ArrayList<>();
     }
 
+    public int getId(){ return id; }
+
+    public String getName(){ return name; }
+
+    public void addOrder(Subscription subscription){ subscriptions.add(subscription); }
+
+    public List<Subscription> getSubscriptions(){ return subscriptions; }
 
 }
 

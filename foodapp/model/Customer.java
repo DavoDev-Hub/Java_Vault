@@ -16,8 +16,11 @@ public class Customer {
     }
 
     public int getId(){ return id; }
+
     public String getName(){ return name; }
+
     public void addOrder(Order order){ orders.add(order); }
+
     public List<Order> getOrders(){ return orders; }
 
 }
