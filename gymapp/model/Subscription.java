@@ -12,6 +12,5 @@ public class Subscription {
     private SubscriptionStatus status;
 
     public Subscription(Member member){
-        this.
     }
 }
