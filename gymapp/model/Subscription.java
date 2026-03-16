@@ -5,7 +5,7 @@ import java.util.List;
 public class Subscription {
     private static int subscriptionCounter = 0;
 
-    private final int subscriptionId;
+//    private final int subscriptionId;
     private Member member;
     private List<Plan> plan;
     private double total;
